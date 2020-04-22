@@ -1,0 +1,9 @@
+
+function formatDate(stamp){
+  var date = getDate(stamp);
+  return date.getFullYear() +  "-" + date.getMonth() +  "-" + date.getDate() ;
+}
+
+module.exports = {
+  formatDate: formatDate,
+}

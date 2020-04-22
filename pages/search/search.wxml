@@ -1,0 +1,23 @@
+<!--pages/search/search.wxml-->
+<view class="search-hd">
+    <view class="search-area">
+        <form bindsubmit="search">
+            <input class="search-txt" name="keyword" placeholder="输入关键词"/>
+            <button class="search-btn" formType="submit"></button>
+        </form>
+    </view>
+    <view class="search-keyword">
+        <view class="search-keyword-title">按名字</view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="中橘"> 中橘 </view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="袜子"> 袜子 </view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="pink"> pink </view>
+        <view class="search-keyword-title">按颜色</view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="黄"> 黄 </view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="白"> 白 </view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="花"> 花 </view>
+        <view class="search-keyword-title">按状态</view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="求学"> 求学 </view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="已领养"> 已领养 </view>
+        <view class="search-keyword-item" bindtap="searchTag" data-keyword="喵星"> 喵星 </view>
+    </view>
+</view>

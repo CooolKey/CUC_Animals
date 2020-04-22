@@ -1,0 +1,101 @@
+/* pages/animalDetail/animalDetail.wxss */
+
+.top-name{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 110rpx;
+  background-color: white;
+  box-shadow: 0 0 10rpx #f4f4f4 inset;
+  box-shadow: 0 0 20rpx #b9b9b9;
+  /*border: 1px solid rgb(233, 233, 233);*/
+}
+.animal-name{
+  margin-top: 25rpx;
+  margin-left: 35rpx;
+  color: rgb(32, 27, 27);
+  font-size: 45rpx;
+}
+
+.container{
+  padding:  0 rpx;
+  margin-top: 110rpx;
+  margin-bottom: 125rpx;
+}
+
+.animal-icon{
+  width: 100%;
+  height: 0;
+  padding-bottom: 103%;
+}
+.animal-avatar{
+  width: 100%;
+  height: 750rpx;
+}
+
+.detail-info{
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+}
+
+.detail-item{
+  margin: 10rpx 0;
+}
+.detail-item-key{
+  /*font-weight: bold;*/
+  font-size: 37rpx;
+  color: rgb(77, 77, 77);
+}
+.detail-item-value{
+  font-size: 37rpx;
+  font-weight: lighter;
+  color: rgb(82, 82, 82);
+}
+
+.data-modified-time{
+  width: 100%;
+  font-weight: lighter;
+  padding: 0 15rpx;
+  text-align: right;
+}
+
+.detail-buttons{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 0rpx;
+  display: flex;
+  width: 100%;
+}
+.detail-button{
+  width: 50%;
+  height: 90rpx;
+  background-color: white;
+  color: rgb(82, 82, 82);
+  border: solid 1px rgb(240, 240, 240);
+  border-radius: 0rpx;
+  font-size: 35rpx;
+  /*font-weight: lighter;*/
+  line-height: 80rpx;
+  /*float: left;*/
+}
+
+/*.detail-button-2{
+  width: 50%;
+  height: 90rpx;
+  background-color: white;
+  color: rgb(82, 82, 82);
+  border: solid 1px rgb(240, 240, 240);
+  border-radius: 0rpx;
+  font-size: 35rpx;
+  /*font-weight: lighter;
+  line-height: 80rpx;
+  float: right;
+}*/
+
+.detail-button::after{
+  border:0;
+  border-radius: 0;
+}

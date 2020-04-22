@@ -1,0 +1,25 @@
+/* pages/adopt/adopt.wxss */
+.header{
+  padding: 25rpx
+}
+.container{
+  padding:  0 25rpx;
+}
+.animal-name{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 20rpx 0;
+}
+
+.animal-avatar{
+  width: 100%;
+}
+.adopt-info{
+  padding: 0 35rpx;
+}
+.form-item{
+  margin: 15rpx 0;
+}

@@ -1,0 +1,81 @@
+page{
+  background-color: #ebebeb;
+}
+
+.animalListView {
+  /*width: 100%;
+  bottom: 0;
+  top: 500rpx;
+  position: absolute;*/
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  /*box-shadow: 0 0 40rpx #f4f4f4 inset;*/
+  background-color: #ebebeb;
+}
+
+.animal {
+  width: 100%;
+  margin-bottom: 23rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+  /*border: 1px solid #e4e4e4;*/
+  box-shadow: 3rpx 3rpx 10rpx rgba(129, 129, 129, 0.274);
+  overflow: hidden;
+  animation: fadeIn 1s;
+  height: 150rpx;
+  position: relative;
+
+  /*width: 100%;
+  height: 150rpx;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;*/
+}
+
+.iconImageView {
+  width: 150rpx;
+  height: 150rpx;
+  top: 20rpx;
+  left: 40rpx;
+  position: absolute;
+}
+.iconImage {
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 100rpx;
+}
+
+.animalNameView {
+  top: 50rpx;
+  left: 195rpx;
+  right: 130rpx;
+  height: 50rpx;
+  position: absolute;
+}
+.animalNameText {
+  color: rgb(32, 27, 27);
+  font-size: 32rpx;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
+.animalStatusView {
+  top: 65rpx;
+  right: 10rpx;
+  height: 50rpx;
+  width: 100rpx;
+  position: absolute;
+}
+.animalStatusText {
+  font-size: 26rpx;
+  padding: 4rpx 6rpx;
+  margin-right: 10rpx;
+  border-top: 1 1 1 1px solid rgb(252, 202, 37);
+  border-radius: 10rpx;
+  background-color: rgb(255, 218, 124);
+  color: rgb(175, 157, 57);
+}

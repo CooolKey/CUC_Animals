@@ -1,0 +1,24 @@
+<template name="animalList">
+<block>
+  <view class="animalListView">
+    <block wx:for="{{animals}}"  wx:for-item="animal">
+      <view data-id="{{animal._id}}" class="animal" catchtap="viewAnimalDetail">
+
+        <view class="iconImageView">
+        <image class="iconImage" src="{{animal.icon}}" mode='aspectFit'></image>
+        </view>
+
+        <view class="animalNameView">
+        <text class="animalNameText">{{animal.name}}</text>
+        </view>
+
+        <!--view class="animalStatusView">
+        <text class="animalStatusText">{{animal.status}}</text>
+        </view-->
+
+      </view>
+    </block>
+
+  </view>
+</block>
+</template>

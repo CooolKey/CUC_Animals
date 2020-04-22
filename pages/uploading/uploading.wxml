@@ -1,0 +1,22 @@
+
+<page-meta>
+  <navigation-bar
+    title="打卡"
+  />
+</page-meta>
+<view class="container">
+  <input class="input_title" placeholder="你的名字" model:value="{{upper}}" maxlength="70"></input>
+  <text class="upload-notice">最多上传{{maxCount}}张图片，长按删除。</text>
+  <view class="upload">
+    <view class="upload-list">
+      <image wx:if="{{images.length}}" wx:for="{{images}}" wx:fox-index="idx" wx:for-item="img" class="upload-image"
+        data-idx="{{idx}}" bindlongpress="askRemove"
+        data-current="{{img}}" bindtap="preview"
+       mode="aspectFill" src="{{img}}" />
+      <view class="upload-placeholder" bindtap="upload" wx:if="{{images.length<maxCount}}">
+        <image class="upload-icon" mode="aspectFit" src="./img/add_image.svg"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<button bindtap="submit">提交</button>

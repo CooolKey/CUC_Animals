@@ -1,0 +1,2 @@
+/* pages/animalGallery/animalGallery.wxss */
+@import "../../component/photoList/photoList.wxss";

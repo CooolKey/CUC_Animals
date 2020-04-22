@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/animals/animals",
+    "pages/gallery/gallery",
+    "pages/search/search",
+    "pages/animalDetail/animalDetail",
+    "pages/animalGallery/animalGallery",
+    "pages/adopt/adopt",
+    "pages/uploading/uploading",
+    "pages/selectPic/selectPic",
+    "pages/searchDetail/searchDetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ebebeb",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "CUC小动物图鉴",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#686868",
+    "selectedColor": "#47a86c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/animals/animals",
+        "iconPath": "images/animals_icon.png",
+        "selectedIconPath": "images/animals_icon_active.png"
+      },
+      {
+        "pagePath": "pages/gallery/gallery",
+        "iconPath": "images/gallery_icon.png",
+        "selectedIconPath": "images/gallery_icon_active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "images/search_icon.png",
+        "selectedIconPath": "images/search_icon_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

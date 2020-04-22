@@ -1,0 +1,3 @@
+<!--pages/animalGallery/animalGallery.wxml-->
+<import src="../../component/photoList/photoList.wxml"/>
+<template is="photoList" data="{{photos:photos}}"/>

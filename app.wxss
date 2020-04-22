@@ -1,0 +1,4 @@
+.animal-name {
+  font-size: 40rpx;
+  color: #333;
+}

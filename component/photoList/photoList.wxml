@@ -1,0 +1,24 @@
+<template name="photoList">
+<block>
+    <view class="photo">
+        <block wx:for="{{photos}}" wx:for-item="photo">
+            <view class="photo-item" data-pic="{{photo.pic}}" bindlongpress="askSave">
+                <view class="photo-cover">
+
+                    <image src="{{photo.pic}}" class="photo-cover-img" mode="widthFix"></image>
+
+                </view>
+                <view class="file-intro">
+                    <view class="photo-title">{{photo.name}}</view>
+                    <view class="photo-upper">
+                        <view class="photo-upper-item">
+                          作者：{{photo.upper}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        
+    </view>
+</block>
+</template>

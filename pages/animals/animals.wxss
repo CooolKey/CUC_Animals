@@ -1,0 +1,2 @@
+/* pages/animals/animals.wxss */
+@import "../../component/animalList/animalList.wxss";

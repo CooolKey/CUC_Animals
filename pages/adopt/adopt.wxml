@@ -1,0 +1,26 @@
+<!--pages/adopt/adopt.wxml-->
+
+<view class="header">
+  
+  <image class="animal-avatar" mode="aspectFill" src="{{'../animalDetail/exampleData/images/' + animalData.avatarId + '.jpg'}}" /> 
+</view>
+<view class="forum">
+  领养{{animalData.name}}
+  <view class="adopt-info">
+    <text>领养表格下载： 下载链接</text>
+    <view class="contact">
+      TEL：13000000000
+    </view>
+  </view>
+  <!-- 这儿直接给个表格填信息吧
+  <form>
+    <view class="form-item">
+      <view class="section__title">手机号码</view>
+      <input name="input" class="" placeholder="手机号码" />
+    </view>
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+    </view>
+  </form>
+  -->
+</view>

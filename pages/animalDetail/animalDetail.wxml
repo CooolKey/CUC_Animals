@@ -1,0 +1,65 @@
+<!--pages/animalDetail/animalDetail.wxml-->
+
+<view class="top-name">
+    <text class="animal-name">{{animalData.name}}</text>
+</view>
+
+<view class="container">
+  <!--wxs module="utils" src="./utils.wxs"></wxs-->
+
+  <view class="animal-icon" data-pic="{{animalData.icon}}" bindlongpress="askSave">
+    <image class="animal-avatar" mode="aspectFill" src="{{animalData.icon}}"/> 
+  </view>
+  
+  <view class="detail-info">
+    <view class="detail-item">
+      <text class="detail-item-key">出生时间</text>：
+      <text class="detail-item-value">{{animalData.birth}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">性别</text>：
+      <text class="detail-item-value">{{animalData.sex}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">状态</text>：
+      <text class="detail-item-value">{{animalData.status}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">外貌</text>：
+      <text class="detail-item-value">{{animalData.look}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">性格</text>：
+      <text class="detail-item-value">
+        <text class="animal-character">{{animalData.personality}}</text>
+      </text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">健康状况</text>：
+      <text class="detail-item-value">{{animalData.health}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">关系</text>：
+      <text class="detail-item-value">{{animalData.relation}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">绝育情况及时间</text>：
+      <text class="detail-item-value">{{animalData.opr}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">第一次目击时间</text>：
+      <text class="detail-item-value">{{animalData.time}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-key">领养建议</text>：
+      <text class="detail-item-value">{{animalData.adopt_adv}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="detail-buttons">
+    <button bindtap="clockIn" class="detail-button" data-name="{{animalData.name}}">打卡</button>
+    <button bindtap="viewGallery" class="detail-button" data-name="{{animalData.name}}">查看相册</button>
+</view>
+
+

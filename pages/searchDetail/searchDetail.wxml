@@ -1,0 +1,3 @@
+<!--pages/searchDetail/searchDetail.wxml-->
+<import src="../../component/animalList/animalList.wxml"/>
+<template is="animalList" data="{{animals:animals}}"/>
